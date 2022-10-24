@@ -13,15 +13,6 @@ export const Layout = ({ children }: PropsWithChildren) => (
                 alt="Your Company"
               />
             </div>
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline space-x-4">
-                <a
-                  className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  aria-current="page">
-                  Home
-                </a>
-              </div>
-            </div>
           </div>
           <div className="hidden md:block">
             <div className="ml-4 flex items-center md:ml-6">
@@ -102,11 +93,6 @@ export const Layout = ({ children }: PropsWithChildren) => (
       </div>
     </nav>
 
-    <header className="bg-white shadow">
-      <div className="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900">Home</h1>
-      </div>
-    </header>
     <main>
       <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">{children}</div>
     </main>
