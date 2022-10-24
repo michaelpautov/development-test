@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
+import { UserResponse } from './types'
 
-export const useGetUsers = () => {
+export const useGetUsers = (): UserResponse[] | undefined => {
   const [users, setUsers] = useState()
   useEffect(() => {
     const getUsers = async () => {
