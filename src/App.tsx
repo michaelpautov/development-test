@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Home, Layout, User, WagmiProvider } from './components'
+import { Home, Layout, User, Wagmi, WagmiProvider } from './components'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/users/:id" element={<User />} />
+            <Route path="/wagmi" element={<Wagmi />} />
           </Routes>
         </Layout>
       </BrowserRouter>
